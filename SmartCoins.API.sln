@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCoins.API", "SmartCoins.API\SmartCoins.API.csproj", "{3A4128EE-1E0B-40AF-A836-E921E6CD6666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCoins.Core", "Core\SmartCoins.Core.csproj", "{46E4BF44-FBF0-458B-B2A7-45BAA84C2D3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCoins.Infrastructure", "Infrastructure\SmartCoins.Infrastructure.csproj", "{F1201CA1-C55E-43E5-A243-F6A66B038F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCoins.Tests", "Tests\SmartCoins.Tests.csproj", "{4766AA0A-4E62-44D6-8E6B-804D905E64E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A4128EE-1E0B-40AF-A836-E921E6CD6666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4128EE-1E0B-40AF-A836-E921E6CD6666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4128EE-1E0B-40AF-A836-E921E6CD6666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4128EE-1E0B-40AF-A836-E921E6CD6666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E4BF44-FBF0-458B-B2A7-45BAA84C2D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E4BF44-FBF0-458B-B2A7-45BAA84C2D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E4BF44-FBF0-458B-B2A7-45BAA84C2D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E4BF44-FBF0-458B-B2A7-45BAA84C2D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1201CA1-C55E-43E5-A243-F6A66B038F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1201CA1-C55E-43E5-A243-F6A66B038F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1201CA1-C55E-43E5-A243-F6A66B038F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1201CA1-C55E-43E5-A243-F6A66B038F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4766AA0A-4E62-44D6-8E6B-804D905E64E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4766AA0A-4E62-44D6-8E6B-804D905E64E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4766AA0A-4E62-44D6-8E6B-804D905E64E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4766AA0A-4E62-44D6-8E6B-804D905E64E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54158B50-1E9A-482A-BDFF-A653FF79ACFE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+@baseUrl = https://localhost:7005
+
+### Test API is running
+GET {{baseUrl}}/weatherforecast/
+Accept: application/json
+
+### Login to get token
+# @name loginRequest
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test.test@example.com",
+  "password": "Test123*"
+}
+
+### Capture token from login response
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJ0ZXN0LnRlc3RAZXhhbXBsZS5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGVzdCIsImV4cCI6MTc0MjE2NTEzNiwiaXNzIjoiU21hcnRDb2lucyIsImF1ZCI6IlNtYXJ0Q29pbnNVc2VycyJ9.axENIOEmRd5767hWxXIf0oca1vFO4uIIpoPNDDOhM5Y
+
+### Get all expenses
+GET {{baseUrl}}/api/expenses
+Authorization: Bearer {{token}}
+
+### Create new expense
+POST {{baseUrl}}/api/expenses
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "amount": 49.99,
+  "description": "Grocery shopping",
+  "date": "2025-03-15T00:00:00.000Z",
+  "categoryId": 1,
+  "isRecurring": false,
+  "tagIds": [1, 2]
+}

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Commands\Budgets\" />
+    <Folder Include="CQRS\Commands\Categories\" />
+    <Folder Include="CQRS\Commands\SavingsGoals\" />
+    <Folder Include="CQRS\Commands\Tags\" />
+    <Folder Include="CQRS\Queries\Budgets\" />
+    <Folder Include="CQRS\Queries\Categories\" />
+    <Folder Include="CQRS\Queries\Tags\" />
+    <Folder Include="CQRS\Queries\SavingsGoals\" />
+    <Folder Include="Enums\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.3" />
+  </ItemGroup>
+
+</Project>
